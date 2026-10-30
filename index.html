@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaaafi Korner — Specialty Coffee &amp; Neighborhood Café | Silvassa</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Kaaafi Korner — Specialty Coffee &amp; Neighborhood Café | Silvassa">
+  <meta name="description" content="Kaaafi Korner is a cozy neighbourhood café in Silvassa serving specialty coffee, South Indian favourites, and classic café comfort food. Rated 4.7/5 on Google.">
+  <meta name="keywords" content="Kaaafi Korner, Silvassa cafe, specialty coffee Silvassa, South Indian breakfast, Horizon Park Naroli Road, Daman and Diu cafes">
+
+  <!-- Google Fonts: Fraunces (Expressive Editorial Serif) & Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SECTION 1 — STICKY NAVBAR
+       ========================================================================== -->
+  <header class="navbar-wrapper" id="siteHeader">
+    <nav class="navbar-container" id="navbarMain" aria-label="Main Navigation">
+      <!-- Left: Brand Identity -->
+      <a href="#home" class="nav-brand" aria-label="Kaaafi Korner Homepage">
+        <span class="brand-emblem" aria-hidden="true">
+          <i class="fa-solid fa-mug-hot"></i>
+        </span>
+        <div class="brand-text-wrap">
+          <span class="brand-title">Kaaafi Korner</span>
+          <span class="brand-subtitle"><i class="fa-solid fa-location-dot"></i> Silvassa</span>
+        </div>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">Our Story</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#reels" class="nav-link">Reels</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#location" class="nav-link">Find Us</a></li>
+      </ul>
+
+      <!-- Right: Main Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a 
+          href="https://www.google.com/maps/search/?api=1&query=Kaaafi+Korner+Shop+No+9+Horizon+Park+Naroli+Road+Silvassa+396230" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn-directions"
+          aria-label="Get Directions to Kaaafi Korner on Google Maps (opens in a new tab)"
+        >
+          <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
+          <span>Get Directions</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button 
+          class="mobile-menu-btn" 
+          id="mobileMenuBtn" 
+          aria-label="Toggle navigation menu" 
+          aria-expanded="false" 
+          aria-controls="mobileDrawer"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title" style="color: var(--cream-light);">Kaaafi Korner</span>
+        <span class="brand-subtitle" style="color: var(--amber-primary);"><i class="fa-solid fa-location-dot"></i> Silvassa</span>
+      </div>
+      <button class="drawer-close-btn" id="mobileDrawerClose" aria-label="Close navigation menu">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
+      <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+      <li><a href="#reels" class="mobile-nav-link">Reels</a></li>
+      <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+      <li><a href="#location" class="mobile-nav-link">Find Us</a></li>
+    </ul>
+
+    <div class="drawer-footer">
+      <a 
+        href="https://www.google.com/maps/search/?api=1&query=Kaaafi+Korner+Shop+No+9+Horizon+Park+Naroli+Road+Silvassa+396230" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="btn-primary"
+        style="width: 100%; justify-content: center;"
+      >
+        <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
+        <span>Get Directions</span>
+      </a>
+      <p class="drawer-hours-note">
+        <span class="status-dot-green"></span>
+        <span>Open until 10:30 PM • Horizon Park</span>
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 2 — HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Background Ambient Glow & Warm Cream Canvas -->
+      <div class="hero-aura-ambient" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-layout">
+          <!-- Left Column: Editorial Headlines, Meta & CTAs -->
+          <div class="hero-content reveal-fade-up">
+            <!-- Location & Quality Badges -->
+            <div class="hero-eyebrow-row">
+              <div class="eyebrow-pill">
+                <span class="dot" aria-hidden="true"></span>
+                <span>Horizon Park, Silvassa</span>
+              </div>
+
+              <!-- Social Proof: Verified 4.7/5 on Google with 94 Reviews -->
+              <a 
+                href="https://www.google.com/search?q=kaafi+korner+silvassa" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="rating-pill" 
+                title="View 94 Google Reviews for Kaaafi Korner (opens in new tab)"
+              >
+                <div class="rating-stars" aria-hidden="true">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-text"><strong>4.7/5</strong> on Google · 94 reviews</span>
+              </a>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="hero-title">
+              <span class="title-line title-dark">Crispy Dosas.</span>
+              <span class="title-line title-amber">Specialty Kaapi.</span>
+              <span class="title-line title-accent">Your New Favourite Korner.</span>
+            </h1>
+
+            <!-- Supporting Description -->
+            <p class="hero-lead-text">
+              A cozy neighbourhood café serving specialty coffee, South Indian favourites and classic café comfort food. Drop by for your coffee, a meal with friends or a little time at the Korner.
+            </p>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="hero-actions-wrap">
+              <a href="#menu" class="btn-primary">
+                <span>Explore the Menu</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a href="#reels" class="btn-secondary">
+                <i class="fa-brands fa-instagram" style="color: var(--amber-primary);" aria-hidden="true"></i>
+                <span>Watch Our Reels</span>
+              </a>
+            </div>
+
+            <!-- Quick Service Badges (Strictly verified offerings) -->
+            <div class="hero-perks-strip">
+              <div class="perk-item">
+                <span class="perk-icon"><i class="fa-solid fa-mug-saucer"></i></span>
+                <span class="perk-label">Artisanal Coffee</span>
+              </div>
+              <div class="perk-divider" aria-hidden="true"></div>
+              <div class="perk-item">
+                <span class="perk-icon"><i class="fa-solid fa-bowl-food"></i></span>
+                <span class="perk-label">South Indian Classics</span>
+              </div>
+              <div class="perk-divider" aria-hidden="true"></div>
+              <div class="perk-item">
+                <span class="perk-icon"><i class="fa-solid fa-clock"></i></span>
+                <span class="perk-label">Closes 10:30 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Asymmetric Editorial Collage & Floating Accents -->
+          <div class="hero-visual-stage reveal-fade-up delay-2">
+            <!-- Background Decorative Soft Organic Ring -->
+            <div class="stage-backdrop-ring" aria-hidden="true"></div>
+
+            <!-- Primary Anchor: Genuine Storefront & Illuminated Entrance -->
+            <div class="stage-card card-primary">
+              <div class="stage-img-wrapper">
+                <img 
+                  src="assets/images/hero-storefront.jpg" 
+                  alt="Genuine illuminated entrance and storefront of Kaaafi Korner in Silvassa at dusk" 
+                  class="stage-main-img"
+                  loading="eager"
+                  width="475"
+                  height="570"
+                >
+                <div class="stage-scrim" aria-hidden="true"></div>
+              </div>
+              <div class="stage-tag-bottom">
+                <span class="stage-dish-name">Welcome to the Korner</span>
+                <span class="stage-dish-sub">Shop No. 9, Horizon Park · Silvassa</span>
+              </div>
+            </div>
+
+            <!-- Secondary Floating Image: Real Café Table Feast -->
+            <div class="stage-card card-secondary animate-float">
+              <img 
+                src="assets/images/hero-table-spread.jpg" 
+                alt="Genuine table spread of café favourites, grilled sandwiches, pasta and drinks served at Kaaafi Korner" 
+                class="stage-sub-img"
+                loading="eager"
+                width="357"
+                height="490"
+              >
+              <div class="card-mini-label">
+                <i class="fa-solid fa-utensils" style="color: var(--amber-primary);"></i>
+                <span>Fresh Café Bites</span>
+              </div>
+            </div>
+
+            <!-- Floating Decorative Editorial Badge: "South Indian Favourites" -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon-box">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-heading">South Indian Favourites</span>
+                <span class="badge-sub">Traditional Taste &amp; Craft</span>
+              </div>
+            </div>
+
+            <!-- Floating Decorative Editorial Badge: "Coffee & Conversations" -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon-box">
+                <i class="fa-solid fa-mug-hot"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-heading">Coffee &amp; Conversations</span>
+                <span class="badge-sub">Your Neighbourhood Corner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3 — ANIMATED CAFÉ MARQUEE
+         ========================================================================== -->
+    <section class="marquee-section" aria-label="Café Highlights Marquee">
+      <div class="marquee-wrapper">
+        <div class="marquee-track">
+          <!-- Marquee Group 1 -->
+          <div class="marquee-group">
+            <span class="marquee-item">COFFEE &amp; <span class="marquee-highlight">CONVERSATIONS</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item"><span class="marquee-highlight">SOUTH INDIAN</span> FAVOURITES</span>
+            <span class="marquee-symbol symbol-icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
+            <span class="marquee-item">A LITTLE TIME AT THE <span class="marquee-highlight">KORNER</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item">HORIZON PARK, <span class="marquee-highlight">SILVASSA</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+          </div>
+
+          <!-- Marquee Group 2 (Duplicate for continuous loop) -->
+          <div class="marquee-group" aria-hidden="true">
+            <span class="marquee-item">COFFEE &amp; <span class="marquee-highlight">CONVERSATIONS</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item"><span class="marquee-highlight">SOUTH INDIAN</span> FAVOURITES</span>
+            <span class="marquee-symbol symbol-icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
+            <span class="marquee-item">A LITTLE TIME AT THE <span class="marquee-highlight">KORNER</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item">HORIZON PARK, <span class="marquee-highlight">SILVASSA</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+          </div>
+
+          <!-- Marquee Group 3 (Extra duplication for wide viewports) -->
+          <div class="marquee-group" aria-hidden="true">
+            <span class="marquee-item">COFFEE &amp; <span class="marquee-highlight">CONVERSATIONS</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item"><span class="marquee-highlight">SOUTH INDIAN</span> FAVOURITES</span>
+            <span class="marquee-symbol symbol-icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
+            <span class="marquee-item">A LITTLE TIME AT THE <span class="marquee-highlight">KORNER</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item">HORIZON PARK, <span class="marquee-highlight">SILVASSA</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+          </div>
+
+          <!-- Marquee Group 4 -->
+          <div class="marquee-group" aria-hidden="true">
+            <span class="marquee-item">COFFEE &amp; <span class="marquee-highlight">CONVERSATIONS</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item"><span class="marquee-highlight">SOUTH INDIAN</span> FAVOURITES</span>
+            <span class="marquee-symbol symbol-icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
+            <span class="marquee-item">A LITTLE TIME AT THE <span class="marquee-highlight">KORNER</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+            <span class="marquee-item">HORIZON PARK, <span class="marquee-highlight">SILVASSA</span></span>
+            <span class="marquee-symbol" aria-hidden="true">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4 — ABOUT KAAAFI KORNER
+         ========================================================================== -->
+    <section class="about-section" id="about" aria-labelledby="aboutMainHeading">
+      <div class="container about-container">
+        <div class="about-layout">
+          <!-- Left Column: Editorial Story & Verified Information -->
+          <div class="about-content reveal-fade-up">
+            <!-- Section Eyebrow -->
+            <div class="about-eyebrow-wrap">
+              <span class="about-eyebrow-line" aria-hidden="true"></span>
+              <span class="about-eyebrow">OUR STORY</span>
+            </div>
+
+            <!-- Main Heading with Expressive Editorial Typography -->
+            <h2 class="about-heading" id="aboutMainHeading">
+              A Little Corner for <span class="about-highlight-italic">Good Food</span> &amp; <span class="about-highlight-amber">Good Coffee</span>
+            </h2>
+
+            <!-- Supporting Heading -->
+            <p class="about-subheading">
+              Your Neighbourhood Café in Silvassa
+            </p>
+
+            <!-- Exact Café Description (Verbatim Source of Truth) -->
+            <div class="about-description-box">
+              <p class="about-description">
+                Kaaafi Korner is a cozy neighbourhood café serving specialty coffee, South Indian favourites, and a selection of classic café dishes. From a good cup of coffee and a dosa to sandwiches, breakfasts and easy comfort food, there’s something for everyone. Come by for a quick coffee, a meal with friends, or simply to spend a little time at the Korner.
+              </p>
+            </div>
+
+            <!-- Meta Badges: Verified Address & Hours -->
+            <div class="about-meta-pills">
+              <div class="about-meta-pill">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>Shop No. 9, Horizon Park, Naroli Road, Silvassa</span>
+              </div>
+              <div class="about-meta-pill pill-secondary">
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                <span>Closes 10:30 PM</span>
+              </div>
+            </div>
+
+            <!-- Tasteful Call-to-Action Button -->
+            <div class="about-actions">
+              <a href="#menu" class="btn-primary">
+                <span>Explore Our Menu</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Asymmetric Editorial Photography Composition -->
+          <div class="about-visual reveal-fade-up delay-2">
+            <!-- Understated Vertical Text Label -->
+            <div class="about-vertical-tag" aria-hidden="true">
+              <span>HORIZON PARK · SILVASSA</span>
+            </div>
+
+            <!-- Gallery Composition Stage -->
+            <div class="about-gallery-stage">
+              <!-- Primary Image Card: Actual Storefront with Illuminated Sign & Entrance -->
+              <div class="about-card card-primary">
+                <img 
+                  src="assets/images/our-story-storefront.jpg" 
+                  alt="Actual Kaaafi Korner storefront with illuminated sign and warm entrance at Horizon Park, Silvassa" 
+                  class="about-img main-img"
+                  loading="lazy"
+                  width="678"
+                  height="532"
+                >
+                <div class="about-img-caption">
+                  <span class="caption-title">Our Café</span>
+                  <span class="caption-sub">Horizon Park · Silvassa</span>
+                </div>
+              </div>
+
+              <!-- Secondary Image Card: Artisanal Coffee Brew (Overlapping Top Right) -->
+              <div class="about-card card-secondary">
+                <img 
+                  src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" 
+                  alt="Illustrative café imagery: Freshly brewed specialty coffee served in a warm ceramic cup" 
+                  class="about-img sub-img"
+                  loading="lazy"
+                >
+                <div class="card-corner-badge">
+                  <i class="fa-solid fa-fire" style="color: var(--amber-primary);" aria-hidden="true"></i>
+                  <span>Specialty Brew</span>
+                </div>
+              </div>
+
+              <!-- Tertiary Image Card: Cozy Café Corner (Overlapping Bottom Left) -->
+              <div class="about-card card-tertiary">
+                <img 
+                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" 
+                  alt="Illustrative café imagery: Cozy neighbourhood café table corner with warm welcoming atmosphere" 
+                  class="about-img sub-img"
+                  loading="lazy"
+                >
+                <div class="card-corner-badge">
+                  <i class="fa-solid fa-heart" style="color: var(--amber-primary);" aria-hidden="true"></i>
+                  <span>The Korner</span>
+                </div>
+              </div>
+
+              <!-- Floating Decorative Badge -->
+              <div class="about-floating-pill">
+                <div class="floating-pill-icon">
+                  <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                </div>
+                <div class="floating-pill-text">
+                  <span class="pill-head">Coffee &amp; Conversations</span>
+                  <span class="pill-desc">A little time at the Korner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5 — INTERACTIVE CAFÉ MENU
+         ========================================================================== -->
+    <section class="menu-section" id="menu" aria-labelledby="menuMainHeading">
+      <div class="container menu-container">
+        <!-- Section Header -->
+        <div class="menu-header reveal-fade-up">
+          <div class="menu-eyebrow-wrap">
+            <span class="menu-eyebrow-line" aria-hidden="true"></span>
+            <span class="menu-eyebrow">MADE FOR YOUR CRAVINGS</span>
+          </div>
+          <h2 class="menu-heading" id="menuMainHeading">
+            Good Food. <span class="heading-serif-italic">Great Coffee.</span> <span class="heading-serif-accent">Your Kind of Korner.</span>
+          </h2>
+          <p class="menu-subheading">
+            From South Indian favourites to café classics, find something to make your visit special.
+          </p>
+          <div class="menu-pricing-notice">
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+            <span>Reported average spend: ₹200–₹400 per person · Item prices subject to in-store confirmation</span>
+          </div>
+        </div>
+
+        <!-- Filter Buttons Bar -->
+        <div class="menu-filters-wrapper reveal-fade-up delay-1">
+          <div class="menu-filters" role="tablist" aria-label="Menu Category Filters">
+            <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="dosas">Signature Dosas</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="coffee">Coffee &amp; Kaapi</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="quick-bites">Quick Bites</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="coolers">Coolers &amp; Shakes</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="favourites">Café Favourites</button>
+          </div>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid" aria-live="polite">
+          <!-- Item 1: Signature Crispy Dosa (Dosas) -->
+          <article class="menu-card" data-category="dosas">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80" 
+                alt="Signature Crispy Dosa served golden and thin with fresh coconut chutney and spiced sambar"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="card-badge badge-signature">Signature</span>
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Signature Crispy Dosa</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Freshly made thin, golden-creped dosa roasted crisp, served with house coconut chutney and warm spiced sambar.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-utensils"></i> South Indian Classic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Benne Dosa (Dosas) -->
+          <article class="menu-card" data-category="dosas">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80" 
+                alt="Traditional Benne butter dosa served crisp on the outside and soft inside"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Benne Dosa</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Authentic Davanagere-style butter dosa with a crisp golden exterior and melt-in-mouth soft center, paired with spicy chutneys.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-utensils"></i> Traditional Recipe</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Ghee Podi Dosa (Dosas) -->
+          <article class="menu-card" data-category="dosas">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80" 
+                alt="Ghee Podi Dosa roasted with aromatic ghee and dusted with spiced gun powder"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Ghee Podi Dosa</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Crispy roast dosa generously brushed with pure aromatic desi ghee and layered with roasted lentil spice podi.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-pepper-hot"></i> Spiced &amp; Crisp</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Traditional Filter Kaapi (Coffee) -->
+          <article class="menu-card" data-category="coffee">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" 
+                alt="Traditional hot South Indian filter coffee in a ceramic cup with thick foam"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="card-badge badge-signature">Specialty</span>
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Traditional Filter Kaapi</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Slow-dripped South Indian decoction whipped with hot frothy milk, delivering deep aromas and authentic warmth.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-mug-hot"></i> Freshly Brewed</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Specialty Cold Coffee (Coffee) -->
+          <article class="menu-card" data-category="coffee">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" 
+                alt="Chilled specialty cold coffee served in a tall glass with creamy froth"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Specialty Cold Coffee</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Bold espresso shot blended chilled with whole milk and light sweetness, poured over ice for a creamy smooth finish.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-snowflake"></i> Chilled Classic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Artisanal Americano (Coffee) -->
+          <article class="menu-card" data-category="coffee">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" 
+                alt="Rich dark roast espresso Americano in a ceramic cup"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Artisanal Americano</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Pure double extraction of dark-roasted coffee beans lengthened with hot water, highlighting delicate notes and bold crema.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-mug-saucer"></i> Bold Roast</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Classic Café Grilled Sandwich (Quick Bites) -->
+          <article class="menu-card" data-category="quick-bites">
+            <div class="card-media">
+              <img 
+                src="assets/images/menu-grilled-sandwich.jpg" 
+                alt="Genuine toasted vegetable grilled sandwich with crisp grill marks and dip served at Kaaafi Korner"
+                class="card-img"
+                loading="lazy"
+                width="310"
+                height="270"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Café Grilled Sandwich</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Toasted bread layered with fresh sliced vegetables, house green chutney, and mild cheese, grilled golden brown.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-bread-slice"></i> Made to Order</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Steamed Idli Platter (Quick Bites) -->
+          <article class="menu-card" data-category="quick-bites">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=800&q=80" 
+                alt="Soft steamed rice idlis served with vegetable sambar and fresh chutney"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Steamed Idli Platter</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Fluffy steamed fermented rice and lentil cakes served warm with steaming drumstick sambar and fresh coconut dip.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-leaf"></i> Light &amp; Wholesome</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 9: Citrus Mint Cooler (Coolers & Shakes) -->
+          <article class="menu-card" data-category="coolers">
+            <div class="card-media">
+              <img 
+                src="assets/images/menu-sparkling-cooler.jpg" 
+                alt="Genuine chilled cooler with spiced rim and lemon slice served at Kaaafi Korner"
+                class="card-img"
+                loading="lazy"
+                width="195"
+                height="240"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Citrus Mint Cooler</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Invigorating blend of fresh mint, zesty lime, crushed ice, and effervescent soda for a sparkling afternoon palate cleanser.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-lemon"></i> Sparkling &amp; Cold</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 10: Café Thick Shake (Coolers & Shakes) -->
+          <article class="menu-card" data-category="coolers">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80" 
+                alt="Creamy gourmet thick milkshake topped with delicate drizzle"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Café Thick Shake</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Indulgent thick shake churned with chilled dairy cream, rich chocolate or vanilla infusion, served velvety thick.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-ice-cream"></i> Sweet &amp; Creamy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 11: Comfort Breakfast Combo (Café Favourites) -->
+          <article class="menu-card" data-category="favourites">
+            <div class="card-media">
+              <img 
+                src="assets/images/menu-cafe-combo.jpg" 
+                alt="Genuine Kaaafi Korner table spread featuring grilled sandwiches, pasta, fries, and cold beverages"
+                class="card-img"
+                loading="lazy"
+                width="357"
+                height="490"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Comfort Breakfast Combo</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">A hearty morning pairing of South Indian tiffin or warm café toast served alongside your choice of hot Kaapi or brew.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-sun"></i> Morning Favourite</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 12: Crispy Medu Vada (Café Favourites) -->
+          <article class="menu-card" data-category="favourites">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80" 
+                alt="Crispy golden medu vada fritters served hot with coconut chutney"
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="veg-indicator" title="Vegetarian"><span class="veg-dot" aria-hidden="true"></span></span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Crispy Medu Vada</h3>
+                <span class="card-price" title="Price pending confirmation"><span class="currency">₹</span><span class="price-val">--</span><span class="price-status">TBC</span></span>
+              </div>
+              <p class="card-desc">Golden crisp on the outside, fluffy and savory inside, infused with crushed peppercorns and curry leaves, served with chutney.</p>
+              <div class="card-footer">
+                <span class="category-tag"><i class="fa-solid fa-bowl-food"></i> Evening Comfort</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Note on In-Store Menu -->
+        <div class="menu-bottom-note reveal-fade-up">
+          <p class="note-text">
+            <i class="fa-solid fa-store" aria-hidden="true"></i>
+            Looking for daily specials? Visit us at <strong>Shop No. 9, Horizon Park, Naroli Road, Silvassa</strong> or ask our team for today's seasonal dishes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6 — INSTAGRAM REELS SHOWCASE
+         ========================================================================== -->
+    <section class="reels-section" id="reels" aria-labelledby="reelsMainHeading">
+      <div class="container reels-container">
+        <!-- Section Header -->
+        <div class="reels-header reveal-fade-up">
+          <div class="reels-eyebrow-wrap">
+            <i class="fa-brands fa-instagram reels-eyebrow-icon" aria-hidden="true"></i>
+            <span class="reels-eyebrow">FRESH FROM OUR INSTAGRAM</span>
+          </div>
+          <h2 class="reels-heading" id="reelsMainHeading">
+            A Little Taste of <span class="heading-serif-italic">the Korner</span>
+          </h2>
+          <p class="reels-subheading">
+            See the coffee, food and café moments that make Kaaafi Korner your neighbourhood spot.
+          </p>
+        </div>
+
+        <!-- Reels Grid Showcase (Vertical 9:16 Aspect Ratio) -->
+        <div class="reels-grid reveal-fade-up delay-1">
+          <!-- Reel Card 1 (Official Instagram Embed with Visual Fallback) -->
+          <article class="reel-card" data-post-url="https://www.instagram.com/p/De6PEXsOHzl/">
+            <blockquote 
+              class="instagram-media" 
+              data-instgrm-captioned 
+              data-instgrm-permalink="https://www.instagram.com/p/De6PEXsOHzl/?utm_source=ig_embed&amp;utm_campaign=loading" 
+              data-instgrm-version="14"
+            >
+              <!-- Styled Fallback Card: Rendered if embed script is blocked or offline -->
+              <div class="reel-fallback-card">
+                <div class="reel-media-wrapper">
+                  <img 
+                    src="assets/images/about-ground-corner.jpg" 
+                    alt="Genuine Kaaafi Korner café atmosphere with arched French windows and cozy seating" 
+                    class="reel-cover-img"
+                    loading="lazy"
+                    width="460"
+                    height="572"
+                  >
+                  <div class="reel-scrim" aria-hidden="true"></div>
+
+                  <!-- Top Meta Badges -->
+                  <div class="reel-top-badges">
+                    <span class="reel-type-badge">
+                      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                      <span>@kaaafikorner</span>
+                    </span>
+                    <span class="reel-icon-pill" title="Instagram Post">
+                      <i class="fa-solid fa-camera-retro" aria-hidden="true"></i>
+                    </span>
+                  </div>
+
+                  <!-- Center Play Indicator -->
+                  <a 
+                    href="https://www.instagram.com/p/De6PEXsOHzl/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="reel-play-button"
+                    aria-label="Watch post on Instagram (opens in a new tab)"
+                  >
+                    <span class="play-icon-glow"></span>
+                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                  </a>
+
+                  <!-- Bottom Details & CTA -->
+                  <div class="reel-bottom-content">
+                    <span class="reel-tagline">Café Moments &amp; Brews</span>
+                    <p class="reel-prompt">Catch this moment from our café feed</p>
+                    <a 
+                      href="https://www.instagram.com/p/De6PEXsOHzl/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn-watch-instagram"
+                      aria-label="Watch on Instagram (opens in a new tab)"
+                    >
+                      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                      <span>Watch on Instagram</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+          </article>
+
+          <!-- Reel Card 2 (Official Instagram Embed with Visual Fallback) -->
+          <article class="reel-card" data-post-url="https://www.instagram.com/reel/DdEtxeROfxv/">
+            <blockquote 
+              class="instagram-media" 
+              data-instgrm-captioned 
+              data-instgrm-permalink="https://www.instagram.com/reel/DdEtxeROfxv/?utm_source=ig_embed&amp;utm_campaign=loading" 
+              data-instgrm-version="14"
+            >
+              <!-- Styled Fallback Card: Rendered if embed script is blocked or offline -->
+              <div class="reel-fallback-card">
+                <div class="reel-media-wrapper">
+                  <img 
+                    src="assets/images/menu-cafe-combo.jpg" 
+                    alt="Genuine dishes and café table feast served at Kaaafi Korner" 
+                    class="reel-cover-img"
+                    loading="lazy"
+                    width="357"
+                    height="490"
+                  >
+                  <div class="reel-scrim" aria-hidden="true"></div>
+
+                  <!-- Top Meta Badges -->
+                  <div class="reel-top-badges">
+                    <span class="reel-type-badge">
+                      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                      <span>@kaaafikorner</span>
+                    </span>
+                    <span class="reel-icon-pill" title="Instagram Reel">
+                      <i class="fa-solid fa-film" aria-hidden="true"></i>
+                    </span>
+                  </div>
+
+                  <!-- Center Play Indicator -->
+                  <a 
+                    href="https://www.instagram.com/reel/DdEtxeROfxv/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="reel-play-button"
+                    aria-label="Watch reel on Instagram (opens in a new tab)"
+                  >
+                    <span class="play-icon-glow"></span>
+                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                  </a>
+
+                  <!-- Bottom Details & CTA -->
+                  <div class="reel-bottom-content">
+                    <span class="reel-tagline">Fresh Food &amp; Good Vibes</span>
+                    <p class="reel-prompt">Watch our reel on Instagram</p>
+                    <a 
+                      href="https://www.instagram.com/reel/DdEtxeROfxv/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn-watch-instagram"
+                      aria-label="Watch on Instagram (opens in a new tab)"
+                    >
+                      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                      <span>Watch on Instagram</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+          </article>
+        </div>
+
+        <!-- Instagram Profile Banner CTA -->
+        <div class="reels-cta-banner reveal-fade-up delay-2">
+          <div class="cta-banner-content">
+            <div class="cta-avatar-wrap">
+              <span class="cta-avatar-icon">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="cta-text-wrap">
+              <h3 class="cta-handle">Follow @kaaafikorner</h3>
+              <p class="cta-desc">For weekly coffee stories, seasonal dishes, and daily moments from our corner in Silvassa.</p>
+            </div>
+          </div>
+          <div class="cta-action-wrap">
+            <a 
+              href="https://www.instagram.com/kaaafikorner/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-follow-instagram"
+              aria-label="Follow @kaaafikorner on Instagram (opens in a new tab)"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span>Follow @kaaafikorner</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6.5 — GOOGLE REVIEWS (VERIFIED REVIEWS)
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews" aria-labelledby="reviewsMainHeading">
+      <div class="container reviews-container">
+        <!-- Section Header -->
+        <div class="reviews-header reveal-fade-up">
+          <div class="reviews-eyebrow-wrap">
+            <i class="fa-brands fa-google reviews-eyebrow-icon" aria-hidden="true"></i>
+            <span class="reviews-eyebrow">VERIFIED GOOGLE REVIEWS</span>
+          </div>
+          <h2 class="reviews-heading" id="reviewsMainHeading">
+            Words from <span class="heading-serif-italic">Our Guests</span>
+          </h2>
+          <div class="reviews-score-pill">
+            <div class="stars-row" aria-hidden="true">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="score-text"><strong>4.7 / 5</strong> on Google · Based on 94 reviews</span>
+          </div>
+        </div>
+
+        <!-- Reviews Cards Grid -->
+        <div class="reviews-grid reveal-fade-up delay-1">
+          <!-- Review 1: Shreya Verma -->
+          <article class="review-card">
+            <div class="review-card-header">
+              <div class="reviewer-avatar">S</div>
+              <div class="reviewer-meta">
+                <span class="reviewer-name">Shreya Verma</span>
+                <span class="review-source"><i class="fa-brands fa-google"></i> Google Review</span>
+              </div>
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-quote">“The place, food and service too good”</p>
+          </article>
+
+          <!-- Review 2: Gamer Akshar -->
+          <article class="review-card">
+            <div class="review-card-header">
+              <div class="reviewer-avatar">G</div>
+              <div class="reviewer-meta">
+                <span class="reviewer-name">Gamer Akshar</span>
+                <span class="review-source"><i class="fa-brands fa-google"></i> Google Review</span>
+              </div>
+              <div class="review-stars" aria-label="4 out of 5 stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <p class="review-quote">“Good interior, friendly staff 😍 must visit”</p>
+          </article>
+
+          <!-- Review 3: Krupali Patel -->
+          <article class="review-card">
+            <div class="review-card-header">
+              <div class="reviewer-avatar">K</div>
+              <div class="reviewer-meta">
+                <span class="reviewer-name">Krupali Patel</span>
+                <span class="review-source"><i class="fa-brands fa-google"></i> Google Review</span>
+              </div>
+              <div class="review-stars" aria-label="1 out of 5 stars">
+                <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <p class="review-quote">“The drinks we ordered weren't very tasty either.”</p>
+          </article>
+        </div>
+
+        <!-- Google Reviews External CTA -->
+        <div class="reviews-cta-row reveal-fade-up delay-2">
+          <a 
+            href="https://www.google.com/search?q=kaafi+korner+silvassa" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-secondary"
+            aria-label="Read all Google reviews for Kaaafi Korner (opens in a new tab)"
+          >
+            <i class="fa-brands fa-google" style="color: var(--amber-primary);" aria-hidden="true"></i>
+            <span>Read All 94 Reviews on Google</span>
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7 — LOCATION & HOURS
+         ========================================================================== -->
+    <section class="location-section" id="location" aria-labelledby="locationMainHeading">
+      <div class="container location-container">
+        <!-- Section Header -->
+        <div class="location-header reveal-fade-up">
+          <div class="location-eyebrow-wrap">
+            <span class="location-pin-icon" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span class="location-eyebrow">COME FIND YOUR KORNER</span>
+          </div>
+          <h2 class="location-heading" id="locationMainHeading">
+            Your Next Coffee Stop <span class="heading-serif-italic">Is Here.</span>
+          </h2>
+          <p class="location-subheading">
+            Whether you're stopping by for your morning coffee, a dosa, or a relaxed catch-up with friends, we'd love to welcome you.
+          </p>
+        </div>
+
+        <!-- Location Two-Column Layout -->
+        <div class="location-layout">
+          <!-- Left Column: Address, Hours & Action Hub -->
+          <div class="location-info-column reveal-fade-up delay-1">
+            <!-- Address Card -->
+            <div class="info-card address-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              </div>
+              <div class="card-content-wrap">
+                <span class="card-label">OUR ADDRESS</span>
+                <h3 class="business-name">Kaaafi Korner</h3>
+                <address class="business-address">
+                  Shop No. 9, Horizon Park, Naroli Road, Silvassa, Athal, Dadra and Nagar Haveli and Daman and Diu, 396230.
+                </address>
+
+                <!-- Copy Address Button & Direct Maps CTA -->
+                <div class="address-actions-row">
+                  <button 
+                    type="button" 
+                    class="btn-copy-address" 
+                    id="copyAddressBtn"
+                    aria-label="Copy address to clipboard"
+                    data-address="Shop No. 9, Horizon Park, Naroli Road, Silvassa, Athal, Dadra and Nagar Haveli and Daman and Diu, 396230"
+                  >
+                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                    <span id="copyBtnText">Copy Address</span>
+                  </button>
+                  <span class="copy-feedback-toast" id="copyToast" role="status" aria-live="polite"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opening Hours Card -->
+            <div class="info-card hours-card">
+              <div class="card-icon-box">
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              </div>
+              <div class="card-content-wrap">
+                <div class="hours-header-row">
+                  <span class="card-label">OPENING HOURS</span>
+                  <span class="hours-badge">
+                    <span class="status-pulse-dot" aria-hidden="true"></span>
+                    <span>Closes 10:30 PM</span>
+                  </span>
+                </div>
+                <div class="hours-schedule-list">
+                  <div class="schedule-item">
+                    <span class="schedule-day">Daily Closing Time</span>
+                    <span class="schedule-time"><strong>10:30 PM</strong></span>
+                  </div>
+                  <div class="schedule-note-box">
+                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    <span>Full weekly morning schedule is pending owner confirmation. Check in-store or on Instagram for current daily opening times.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Useful Quick Actions Row -->
+            <div class="location-actions-bar">
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Kaaafi+Korner+Shop+No+9+Horizon+Park+Naroli+Road+Silvassa+396230" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-primary"
+                aria-label="Get Directions on Google Maps (opens in a new tab)"
+              >
+                <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
+                <span>Get Directions</span>
+              </a>
+
+              <a 
+                href="https://www.instagram.com/kaaafikorner/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-secondary"
+                aria-label="Visit Instagram Profile (opens in a new tab)"
+              >
+                <i class="fa-brands fa-instagram" style="color: #E1306C;" aria-hidden="true"></i>
+                <span>Visit Instagram</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Embedded Map Stage -->
+          <div class="location-map-column reveal-fade-up delay-2">
+            <div class="map-frame-wrapper">
+              <!-- Embedded Google Map Search -->
+              <iframe 
+                title="Google Maps Location for Kaaafi Korner, Horizon Park, Silvassa"
+                src="https://maps.google.com/maps?q=Kaaafi+Korner+Horizon+Park+Naroli+Road+Silvassa+396230&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+                class="google-map-iframe"
+                loading="lazy"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <!-- Map Overlay Floating Badge -->
+              <div class="map-floating-badge">
+                <div class="map-badge-icon">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </div>
+                <div class="map-badge-text">
+                  <span class="badge-title">Horizon Park</span>
+                  <span class="badge-subtitle">Naroli Road, Silvassa</span>
+                </div>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Kaaafi+Korner+Shop+No+9+Horizon+Park+Naroli+Road+Silvassa+396230" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="map-badge-link"
+                  aria-label="Open location in Google Maps (opens in a new tab)"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8 — FREQUENTLY ASKED QUESTIONS (FAQ)
+         ========================================================================== -->
+    <section class="faq-section" id="faq" aria-labelledby="faqMainHeading">
+      <div class="container faq-container">
+        <!-- Section Header -->
+        <div class="faq-header reveal-fade-up">
+          <div class="faq-eyebrow-wrap">
+            <span class="faq-eyebrow-icon" aria-hidden="true">
+              <i class="fa-solid fa-circle-question"></i>
+            </span>
+            <span class="faq-eyebrow">A FEW THINGS YOU MIGHT WONDER</span>
+          </div>
+          <h2 class="faq-heading" id="faqMainHeading">
+            Good Questions. <span class="heading-serif-italic">Good Coffee.</span>
+          </h2>
+          <p class="faq-subheading">
+            A few quick answers to help make your next visit to Kaaafi Korner a little easier.
+          </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="faq-accordion reveal-fade-up delay-1" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger1" 
+              aria-expanded="false" 
+              aria-controls="faqPanel1"
+            >
+              <span class="faq-question-text">Where is Kaaafi Korner located?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel1" 
+              role="region" 
+              aria-labelledby="faqTrigger1"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  Kaaafi Korner is at <strong>Shop No. 9, Horizon Park, Naroli Road, Silvassa, Athal, Dadra and Nagar Haveli and Daman and Diu, 396230</strong>. Use the <a href="#location" class="faq-inline-link">Get Directions link</a> in our location section to find the café on Google Maps.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger2" 
+              aria-expanded="false" 
+              aria-controls="faqPanel2"
+            >
+              <span class="faq-question-text">What kind of food and drinks do you serve?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel2" 
+              role="region" 
+              aria-labelledby="faqTrigger2"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  Kaaafi Korner serves specialty coffee, South Indian favourites, and classic café dishes, including options such as dosas, sandwiches, and breakfast favourites.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger3" 
+              aria-expanded="false" 
+              aria-controls="faqPanel3"
+            >
+              <span class="faq-question-text">What is the average cost per person?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel3" 
+              role="region" 
+              aria-labelledby="faqTrigger3"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  The listed average cost is approximately <strong>₹200–₹400 per person</strong>. Actual spending may vary depending on your order.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger4" 
+              aria-expanded="false" 
+              aria-controls="faqPanel4"
+            >
+              <span class="faq-question-text">What time does the café close?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel4" 
+              role="region" 
+              aria-labelledby="faqTrigger4"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  The currently supplied business information lists a closing time of <strong>10:30 PM</strong>. Please confirm the latest hours before visiting, as the full weekly schedule has not yet been verified.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger5" 
+              aria-expanded="false" 
+              aria-controls="faqPanel5"
+            >
+              <span class="faq-question-text">Can I see your food and café updates online?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel5" 
+              role="region" 
+              aria-labelledby="faqTrigger5"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  Yes! Visit our Instagram profile to explore café updates, food content, and reels: <a href="https://www.instagram.com/kaaafikorner/" target="_blank" rel="noopener noreferrer" class="faq-inline-link">https://www.instagram.com/kaaafikorner/</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger6" 
+              aria-expanded="false" 
+              aria-controls="faqPanel6"
+            >
+              <span class="faq-question-text">How can I check customer reviews?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel6" 
+              role="region" 
+              aria-labelledby="faqTrigger6"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  You can read customer feedback through our Google listing: <a href="https://www.google.com/search?q=kaafi+korner+silvassa" target="_blank" rel="noopener noreferrer" class="faq-inline-link">https://www.google.com/search?q=kaafi+korner+silvassa</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faqTrigger7" 
+              aria-expanded="false" 
+              aria-controls="faqPanel7"
+            >
+              <span class="faq-question-text">Do you offer vegetarian or vegan options?</span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </span>
+            </button>
+            <div 
+              class="faq-panel" 
+              id="faqPanel7" 
+              role="region" 
+              aria-labelledby="faqTrigger7"
+            >
+              <div class="faq-panel-content">
+                <p>
+                  We have not yet verified the complete vegetarian and vegan menu. Please check the current menu or contact the café directly to confirm specific dietary options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Assistance Hint -->
+        <div class="faq-bottom-hint reveal-fade-up delay-2">
+          <p class="hint-text">
+            <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+            Have another question? Reach out on <a href="https://www.instagram.com/kaaafikorner/" target="_blank" rel="noopener noreferrer">Instagram (@kaaafikorner)</a> or ask our team in person at Horizon Park.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 9 — FOOTER & FLOATING ACTIONS
+       ========================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-container">
+      <!-- Main Footer 3-Column Layout -->
+      <div class="footer-main-grid">
+        <!-- Column 1: Café Identity -->
+        <div class="footer-col footer-col-brand">
+          <a href="#home" class="footer-brand-link" aria-label="Kaaafi Korner Homepage">
+            <span class="brand-emblem-footer" aria-hidden="true">
+              <i class="fa-solid fa-mug-hot"></i>
+            </span>
+            <span class="brand-title-footer">Kaaafi Korner</span>
+          </a>
+          <p class="footer-desc">
+            Good coffee, comforting food, and a little corner to slow down. Drop by for a quick coffee, a meal with friends, or a relaxed moment at the Korner.
+          </p>
+          <div class="footer-location-tag">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Shop No. 9, Horizon Park, Silvassa</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer-col footer-col-nav">
+          <h3 class="footer-heading">Quick Navigation</h3>
+          <ul class="footer-nav-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#menu" class="footer-link">Menu</a></li>
+            <li><a href="#reels" class="footer-link">Instagram</a></li>
+            <li><a href="#reviews" class="footer-link">Reviews</a></li>
+            <li><a href="#location" class="footer-link">Location</a></li>
+            <li><a href="#faq" class="footer-link">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Find Us Online -->
+        <div class="footer-col footer-col-online">
+          <h3 class="footer-heading">Find Us Online</h3>
+          <ul class="footer-online-list">
+            <li class="online-item">
+              <i class="fa-solid fa-location-dot item-icon" aria-hidden="true"></i>
+              <address class="footer-address">
+                Shop No. 9, Horizon Park, Naroli Road, Silvassa, Athal, Dadra and Nagar Haveli and Daman and Diu, 396230.
+              </address>
+            </li>
+            <li class="online-item">
+              <i class="fa-brands fa-instagram item-icon" aria-hidden="true"></i>
+              <a 
+                href="https://www.instagram.com/kaaafikorner/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="footer-external-link"
+                aria-label="Visit Kaaafi Korner on Instagram (opens in a new tab)"
+              >
+                <span>@kaaafikorner</span>
+                <i class="fa-solid fa-arrow-up-right-from-square icon-ext" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="online-item">
+              <i class="fa-brands fa-google item-icon" aria-hidden="true"></i>
+              <a 
+                href="https://www.google.com/search?q=kaafi+korner+silvassa" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="footer-external-link"
+                aria-label="Read Google Reviews (opens in a new tab)"
+              >
+                <span>4.7/5 on Google · 94 Reviews</span>
+                <i class="fa-solid fa-arrow-up-right-from-square icon-ext" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="online-item">
+              <i class="fa-solid fa-diamond-turn-right item-icon" aria-hidden="true"></i>
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Kaaafi+Korner+Shop+No+9+Horizon+Park+Naroli+Road+Silvassa+396230" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="footer-external-link highlight-maps"
+                aria-label="Get Directions on Google Maps (opens in a new tab)"
+              >
+                <span>Get Directions</span>
+                <i class="fa-solid fa-arrow-up-right-from-square icon-ext" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">
+          © <span id="currentYear">2026</span> Kaaafi Korner. All rights reserved.
+        </p>
+        <p class="footer-signature">
+          Made with ☕ and a little love.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Elements -->
+  <div class="floating-actions-group" aria-label="Page Shortcuts">
+    <!-- Floating Instagram Shortcut -->
+    <a 
+      href="https://www.instagram.com/kaaafikorner/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="floating-btn floating-instagram" 
+      id="floatingInstagramBtn"
+      aria-label="Follow Kaaafi Korner on Instagram (opens in a new tab)"
+    >
+      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+    </a>
+
+    <!-- Floating Back-to-Top Button -->
+    <button 
+      type="button" 
+      class="floating-btn floating-top" 
+      id="backToTopBtn" 
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- Official Instagram Embed Script (Loaded asynchronously once) -->
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
